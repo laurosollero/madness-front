@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": false,
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "paths": {
+      "Base/*": ["./src/*"],
+      "Components/*": ["./src/components/*"],
+      "Context/*": ["./src/context/*"],
+      "Services/*": ["./src/services/*"],
+      "Types/*": ["./src/types/*"]
+    }
+  }
+}

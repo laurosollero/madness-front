@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Black+Ops+One&display=swap");
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Concert One";
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  // background: radial-gradient(circle, rgba(7,123,76,1) 12%, rgba(34,45,174,1) 99%);
+  background-color: #1b515aad;
+  background-image: linear-gradient(#ffffff59 2px, transparent 2px),
+    linear-gradient(90deg, #ffffff59 2px, transparent 2px),
+    linear-gradient(#ffffff80 1px, transparent 1px),
+    linear-gradient(90deg, #ffffff80 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+#app {
+  width: 800px;
+  max-width: 90%;
+  margin: 0 auto;
+  background: white;
+  border-radius: 5px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: -5px;
+    border-radius: 5px;
+    background: linear-gradient(
+      313deg,
+      #090979 1%,
+      #081481 34%,
+      #038ace 46%,
+      #9dddff 100%
+    );
+    box-shadow: #000000b3 0 3px 10px;
+  }
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 250ms linear;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 250ms linear 2s;
+}
+
+.text {
+  background: -webkit-linear-gradient(#051a9a 28%, #a0b7eb 83%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px navy;
+  font-weight: normal;
+}
+
+.text2 {
+  font-family: "Black Ops One", cursive;
+  text-transform: uppercase;
+  span {
+    display: inline-block;
+    &::first-letter {
+      display: inline-block;
+      font-size: 1.25em;
+    }
+  }
+}
